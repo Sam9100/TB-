@@ -15,7 +15,8 @@
             <div class="container flex justify-between">
                 <h1 class="text-2xl font-semibold ">PRESENSI SISWA D4 TEKNIK INFORMATIKA KELAS 1A</h1>
                 <ul>
-                <button><a href="login.php" class="font-semibold text-white">Log Out</a></button>
+                <a href="login.php" class="no-underline text-black bg-orange-600 rounded py-2 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:text-orange-600 duration-300 hover:border border border-transparent">Log Out</a>
+                <a href="datamahasiswa.php" class="no-underline text-black bg-orange-600 rounded py-2 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:text-orange-600 duration-300 hover:border border border-transparent">Data Mahasiswa</a>
                 </ul> 
             </div>
         </nav>

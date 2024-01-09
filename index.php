@@ -17,13 +17,11 @@
             <img src="https://scontent-cgk1-1.xx.fbcdn.net/v/t39.30808-6/294620708_118919174201671_9106153162836338258_n.jpg?stp=cp0_dst-jpg_e15_fr_q65&_nc_cat=107&ccb=1-7&_nc_sid=fa004d&efg=eyJpIjoidCJ9&_nc_eui2=AeGysNovV-p8IvNY9RbZ-H5D0osmAELzpMDSiyYAQvOkwFxR4DjmnvjwLxCeeWrCsWY2p6e7DAmtr1UqjIlhjnPy&_nc_ohc=--YrVXsrSsIAX_MKW9e&_nc_ht=scontent-cgk1-1.xx&oh=00_AfAz-Zapk7NR7R4RkLkl9XSiRK8WH1Av8Y6u6eEOFoXhjw&oe=659918B1" class="h-20" alt="Ulbi Logo" />
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Universitas Logistik dan Bisnis Internasional</span>
         </a>
-        <div class="flex items-center space-x-6 rtl:space-x-reverse">
+        <div class="flex items-center space-x-8 rtl:space-x-reverse">
             <a href="https://www.ulbi.ac.id/" class="text-sm  text-gray-500 dark:text-white hover:underline">
                 ULBI</a>
             <a href="login.php" class="text-sm no-underline text-black bg-orange-600 rounded py-2 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:text-blue-600 duration-300 hover:border border border-transparent">
-                LOGIN</a>
-            <a href="daftar.php" class="text-sm text-sm no-underline text-black bg-orange-600 rounded py-2 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:text-blue-600 duration-300 hover:border border border-transparent">
-                DAFTAR</a>
+                Login</a>
         </div>
     </div>
 </nav>

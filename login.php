@@ -17,10 +17,6 @@
         <nav class="text-right pr-4">
             <a href="index.php"
                 class="no-underline text-black bg-orange-600 rounded py-2 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:text-orange-600 duration-300 hover:border border border-transparent">Home</a>
-            <a href="login.php"
-                class="no-underline text-black bg-orange-600 rounded py-2 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:text-orange-600 duration-300 hover:border border border-transparent">Login</a>
-            <a href="daftar.php"
-                class="no-underline text-black bg-orange-600 rounded py-2 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:text-orange-600 duration-300 hover:border border border-transparent">Daftar</a>
         </nav>
     </div>
     <div class="login-container">
@@ -28,20 +24,35 @@
         <input type="text" id="username" name="username" required>
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
+        <a href="daftar.php" class="text-sm  text-blue-500 dark:text-white hover:underline">Daftar</a>
+        <br>
+        <a href="lupapw.php" class="text-sm  text-blue-500 dark:text-white hover:underline">Lupa Password</a>
+        <br><br>
         <button type="button" class="no-underline text-black bg-orange-600 rounded py-2 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:text-orange-600 duration-300 hover:border border border-transparent"
         onclick="validateLogin()">Login</button>
+        
     </div>
     <script>
         function validateLogin() {
             var username = document.getElementById('username').value;
             var password = document.getElementById('password').value;
-            if (username === 'user' && password === 'user') {
+            if (username === '1' && password === '1') {
                 window.location.href = "presensi.php";
             } else {
                 alert('Username/NPM atau Password Salah. Silahkan Coba lagi.');
             }
         }
     </script>
+    <?php
+    if (isset($_GET['status'])) {
+        $status = $_GET['status'];
+        if ($status == 'sukses') {
+            echo '<p><b>Email Berhasil Dikirim!</b></p>';
+        } elseif ($status == 'gagal') {
+            echo '<p><b>Email Yang Dimasukkan Salah Atau Tidak Terdaftar. Silakan Coba Lagi.</b></p>';
+        }
+    }
+    ?>
     <footer class="bg-orange-600 text-black text-center h-6 font-bold opacity-60">
         <p>2023, &copy; Copyright All Right Reserved. By : Muhammad Haitsam Izzuddin Azman & Resqi Aulia Gita Utami</p>
     </footer>

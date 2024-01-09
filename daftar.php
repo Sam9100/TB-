@@ -18,15 +18,13 @@
                 class="no-underline text-black bg-orange-600 rounded py-2 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:text-orange-600 duration-300 hover:border border border-transparent">Home</a>
             <a href="login.php"
                 class="no-underline text-black bg-orange-600 rounded py-2 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:text-orange-600 duration-300 hover:border border border-transparent">Login</a>
-            <a href="daftar.php"
-                class="no-underline text-black bg-orange-600 rounded py-2 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:text-orange-600 duration-300 hover:border border border-transparent">Daftar</a>
         </nav>
     </div>
     <header class="bg-orange-300 text-xl text-center">
         <h3>Formulir Pendaftaran Mahasiswa Baru | ULBI</h3>
     </header>
     <br>
-    <form action="proses-daftar.php" method="POST" class="max-w-md mx-auto my-8 p-6 bg-white rounded-md shadow-md">
+    <form action="datamahasiswa.php" method="POST" class="max-w-md mx-auto my-8 p-6 bg-white rounded-md shadow-md">
     <fieldset class="tabel-daftar">
         <div class="mb-4">
             <label for="nama" class="block text-gray-700">Nama:</label>
@@ -35,6 +33,10 @@
         <div class="mb-4">
             <label for="alamat" class="block text-gray-700">Alamat:</label>
             <textarea name="alamat" placeholder="Alamat" class="w-full border p-2 rounded-md"></textarea>
+        </div>
+        <div class="mb-4">
+            <label for="email" class="block text-gray-700">Email:</label>
+            <input type="text" name="email" placeholder="Email" class="w-full border p-2 rounded-md">
         </div>
         <div class="mb-4">
             <label class="block text-gray-700">Jenis Kelamin:</label>
